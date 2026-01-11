@@ -1,14 +1,13 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronak Fashion | Jetpur</title>
-
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronak Fashion | Jetpur</title>
+  <style>
 :root{
-  --primary:#7a2e8e;
-  --accent:#f4a63a;
+  --primary:#7a2e8e;   /* Logo purple */
+  --accent:#f4a63a;    /* Golden accent */
   --dark:#2b2b2b;
   --light:#f6f6f6;
 }
@@ -21,16 +20,17 @@
 }
 
 body{
-  background:var(--light);
+  background:var(--primary); /* Background now matches logo color */
   color:#333;
 }
 
 /* Header */
 header{
-  background:linear-gradient(135deg, var(--primary), #9b3fae);
-  color:white;
+  background:white; /* Changed to white */
+  color:var(--primary);
   text-align:center;
-  padding:30px 15px;
+  padding:40px 15px; /* Slightly larger padding */
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
 header img{
@@ -39,13 +39,15 @@ header img{
 }
 
 header h1{
-  font-size:30px;
+  font-size:32px;
   letter-spacing:1px;
+  color:var(--primary);
 }
 
 header p{
-  color:#ffe6b8;
+  color:var(--accent);
   margin-top:6px;
+  font-weight:500;
 }
 
 /* Navigation */
@@ -54,7 +56,7 @@ nav{
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  padding:10px;
+  padding:12px;
 }
 
 nav a{
@@ -109,8 +111,9 @@ footer{
   background:var(--dark);
   color:white;
   text-align:center;
-  padding:15px;
-  font-size:14px;
+  padding:40px; /* Increased footer height */
+  font-size:15px;
+  letter-spacing:0.5px;
 }
 
 /* Floating WhatsApp */
@@ -132,68 +135,42 @@ footer{
   header h1{font-size:24px;}
   .section{padding:22px;}
 }
-</style>
-
-<script>
+  </style>
+  <script>
 function openWhatsApp(){
   window.open("https://wa.me/919925897740","_blank");
 }
-</script>
+  </script>
 </head>
-
 <body>
-
-<header>
-  <!-- LOGO -->
-  <img src="logo.png" alt="Ronak Fashion Logo">
-  <h1>Ronak Fashion</h1>
-  <p>Manufacturer & Exporter of Cotton Sarees & Dresses</p>
-</header>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="home" class="section">
-  <h2>Welcome to Ronak Fashion</h2>
-  <p>
-    Ronak Fashion, based in Jetpur, Gujarat, is a trusted manufacturer and exporter of
-    premium cotton sarees and dresses with more than two decades of industry experience.
-  </p>
-  <a class="whatsapp-btn" href="https://wa.me/919925897740" target="_blank">
-    💬 Contact on WhatsApp
-  </a>
-</section>
-
-<section id="about" class="section">
-  <h2>About Us</h2>
-  <p>
-    With over 20 years in textile manufacturing, Ronak Fashion stands for quality,
-    craftsmanship, and consistency. We cater to wholesalers, retailers, and exporters
-    across India and international markets.
-  </p>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p><strong>📞 Phone:</strong> 9925897740</p>
-  <p><strong>📧 Email:</strong> neelamprint.np@gmail.com</p>
-  <p><strong>📍 Address:</strong><br>
-    MJ Udhyog Nagar, Rabarika Road,<br>
-    Jetpur-Navagadh, Gujarat – 360370
-  </p>
-  <button class="btn" onclick="openWhatsApp()">Chat on WhatsApp</button>
-</section>
-
-<footer>
-  © 2026 Ronak Fashion, Jetpur. All Rights Reserved.
-</footer>
-
-<a class="float-whatsapp" href="https://wa.me/919925897740" target="_blank">
-  💬 WhatsApp
-</a>
-
+  <header>
+    <!-- LOGO -->
+    <img src="logo.png" alt="Ronak Fashion Logo">
+    <h1>Ronak Fashion</h1>
+    <p>Manufacturer & Exporter of Cotton Sarees & Dresses</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a> <a href="#about">About</a> <a href="#contact">Contact</a>
+  </nav>
+  <section id="home" class="section">
+    <h2>Welcome to Ronak Fashion</h2>
+    <p>Ronak Fashion, based in Jetpur, Gujarat, is a trusted manufacturer and exporter of premium cotton sarees and dresses with more than two decades of industry experience.</p>
+    <a class="whatsapp-btn" href="https://wa.me/919925897740" target="_blank"> 💬 Contact on WhatsApp </a>
+  </section>
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>With over 20 years in textile manufacturing, Ronak Fashion stands for quality, craftsmanship, and consistency. We cater to wholesalers, retailers, and exporters across India and international markets.</p>
+  </section>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p><strong>📞 Phone:</strong> 9925897740</p>
+    <p><strong>📧 Email:</strong> neelamprint.np@gmail.com</p>
+    <p><strong>📍 Address:</strong><br>
+      MJ Udhyog Nagar, Rabarika Road,<br>
+      Jetpur-Navagadh, Gujarat – 360370</p>
+    <button class="btn" onclick="openWhatsApp()">Chat on WhatsApp</button>
+  </section>
+  <footer>© 2026 Ronak Fashion, Jetpur. All Rights Reserved.</footer>
+  <a class="float-whatsapp" href="https://wa.me/919925897740" target="_blank"> 💬 WhatsApp </a>
 </body>
 </html>
